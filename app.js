@@ -1,18 +1,13 @@
 let MyWindow = function (myWindow, myBackgroundWindow) {
 
-    this.window = myWindow;
     this.backgroundWindow = myBackgroundWindow;
 
-    this.openWindow = () => {
-
-        this.backgroundWindow.style.display = 'block'
-    }
-
-    this.closeWindow = () => {
-        this.backgroundWindow.style.display = 'none';
-    }
-
 }
+
+MyWindow.prototype.openWindow = () => this.backgroundWindow.style.display = "block";
+
+MyWindow.prototype.closeWindow = () => this.backgroundWindow.style.display = "none";
+
 
 let myNewWindow = new MyWindow(document.getElementById('window'), document.querySelector('#backgroundWindow'));
 
