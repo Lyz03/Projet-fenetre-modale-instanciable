@@ -1,21 +1,20 @@
-let MyWindow = function (myWindow, myPage) {
+let MyWindow = function (myWindow, myBackgroundWindow) {
 
     this.window = myWindow;
-    this.page = myPage;
+    this.backgroundWindow = myBackgroundWindow;
 
     this.openWindow = () => {
-        this.window.style.display = 'block';
-        this.page.style.display = 'none'
+
+        this.backgroundWindow.style.display = 'block'
     }
 
     this.closeWindow = () => {
-        this.window.style.display = 'none';
-        this.page.style.display = 'block';
+        this.backgroundWindow.style.display = 'none';
     }
 
 }
 
-let myNewWindow = new MyWindow(document.getElementById('window'), document.querySelector('main'));
+let myNewWindow = new MyWindow(document.getElementById('window'), document.querySelector('#backgroundWindow'));
 
 // open button
 document.getElementById('open').addEventListener("click", () => myNewWindow.openWindow());

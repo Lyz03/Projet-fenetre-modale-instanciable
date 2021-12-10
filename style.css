@@ -2,15 +2,27 @@ body {
     font-family: sans-serif;
 }
 
+#backgroundWindow {
+    display: none;
+    background-color: rgba(169, 169, 169, 0.34);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+}
+
 #window {
     /*
     display: none;
      */
-
     border: 1px solid black;
-    width: 60%;
-    margin: 2rem auto;
+    width: 50%;
+    margin: 5rem auto;
     padding: 1rem;
+    color: #656565;
+    background-color: white;
 }
 
 #window h2 {
@@ -19,14 +31,21 @@ body {
 
 #close {
     float: right;
+    background-color: #fb8c8a;
 }
 
 #submit {
     display: block;
     margin-top: 1rem;
     padding: 0.2rem 1rem;
+    background-color: #8d9bdc;
 }
 
 #window div {
     border-bottom: 1px solid black;
+}
+
+#window button {
+    border: none;
+    color: white;
 }
