@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+}
+
+#window {
+    /*
+    display: none;
+     */
+
+    border: 1px solid black;
+    width: 60%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#window h2 {
+    display: inline-block;
+}
+
+#close {
+    float: right;
+}
+
+#submit {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+#window div {
+    border-bottom: 1px solid black;
+}
